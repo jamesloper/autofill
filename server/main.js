@@ -1,4 +1,5 @@
 import { Meteor } from 'meteor/meteor';
+import { HTTP } from 'meteor/http';
 
 Meteor.methods({
 	'Autofill': function(search) {
@@ -12,7 +13,6 @@ Meteor.methods({
 		// api calls and shit
 		// api calls and shit
 		
-		var EXEC = Date.now() - BEGIN;
-		console.log(`Search "${search}" completed in ${exec} ms.`);
+		console.log(`Search "${search}" completed in ${Date.now() - BEGIN} ms.`);
 	}
 });
