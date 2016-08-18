@@ -1,29 +1,36 @@
 <img src="https://i.imgur.com/Tfi0xR5.jpg" width="600" style="float:right">
 
-## Process
-- User inputs some characters of address.
-- Up to 5 autofill results show in the above format.
+## Autocomplete Test
+This is a test for applicants for the developer position at Hux. To complete the test, clone the repo and develop an interface and one meteor method that satisfies all the requirements. 
+
+> The desired output is a list of valid street addresses that contain the characters typed by the user and are close the users location (for the test that can just be hard coded).
 
 ## This Repo
 
-This repo is a template that has the following features.
+The client/ directory is a template for building a mobile app with the following features:
 
-- Unstyled text box for address input and unstyled list for autofill results.
-- Throttles user input by 250 ms seconds, client side. Do not alter.
-- Stub function that includes a basic execution length readout.
+- An unstyled `input` for the address to be typed into.
+- An event listener attached to `input` that throttles keyup events by 250 ms seconds. Do not change this.
+- An unstyled `ul` element which should be populated with your autofill results.
+
+The server/main.js file is a stub. It has a function that logs the execution time.
 
 ## Requirements
 
-- Create the UI that looks like the picture.
-- Create a Meteor server-side method.
-- Use the built-in meteor/http to call the API from the server.
+#### Client
+- Create the UI that looks like the image.
+- The user can input some characters of a street address.
+- Up to 5 possible results fill in the `ul` element.
 - Results must be formatted like this: `[street number] [street name], [city] [state], [zipcode]`
-- Least amount of client side code allowable by the laws of nature.
-- Use the coordinates 33.7490° N, 84.3880° W as the search location.
-- Try your best to beat 600 ms from start to return time as measured on the server.
-- Npm is fair game on the server, but we didn't find it useful in our case.
-- Must be super accurate, functionality is the most important part.
-- Tabs not spaces.
+- Use the **absolute least** amount of client side code.
+
+### Server
+- You may use Npm on the server if you like (but we didn't find it useful).
+- Use HTTP from [meteor/http](https://docs.meteor.com/api/http.html) to call the API from the server. It has already been added.
+- Accuracy/quality of results is the most important aspect.
+- For this test your results should prefer addresses near Atlanta, GA. So localize the result set around 33.7490° N, 84.3880° W. 
+- Try your best to beat 600 ms execution time as logged on the server.
+- Tabs instead of spaces.
 
 Here are the params to the autocomplete call:
 
