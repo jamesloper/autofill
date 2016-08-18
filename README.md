@@ -3,7 +3,7 @@
 ## Autocomplete Test
 This is a test for applicants for the developer position at Hux. To complete the test, clone the repo and develop an interface and one meteor method that satisfies all the requirements. 
 
-> The desired output is a list of valid street addresses that contain the characters typed by the user and are close the users location (for the test that can just be hard coded).
+The desired output is a list of valid street addresses that contain the characters typed by the user and are close the users location (Lat & Lon can be hard coded for the test).
 
 ## This Repo
 
