@@ -1,13 +1,20 @@
+<img src="https://i.imgur.com/Tfi0xR5.jpg" width="600" style="float:right">
+
 ## Process
 - User inputs some characters of address.
-- Autofill results (up to 5 max) show in the following format:
+- Up to 5 autofill results show in the above format.
 
-<img src="https://i.imgur.com/Yf69KwL.png" width="310">
+## This Repo
 
-Screenshot is taken from our checkout page.
+This repo is a template that has the following features.
+
+- Unstyled text box for address input and unstyled list for autofill results.
+- Throttles user input by 250 ms seconds, client side. Do not alter.
+- Stub function that includes a basic execution length readout.
 
 ## Requirements
 
+- Create the UI that looks like the picture.
 - Create a Meteor server-side method.
 - Use the built-in meteor/http to call the API from the server.
 - Results must be formatted like this: `[street number] [street name], [city] [state], [zipcode]`
@@ -26,13 +33,6 @@ Here are the params to the autocomplete call:
 	      radius: 50000,
 	      rankby: 'distance'
     };
-
-## This Repo
-
-This repo is a template that has the following features.
-
-- Throttles (not debounce) user input by 250 ms seconds client side.
-- Stub function that includes a basic execution length readout.
 
 ## Big Picture
 - Don't work more than 7 hours
