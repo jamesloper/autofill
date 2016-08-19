@@ -46,6 +46,6 @@ Here are the params to the autocomplete call:
 - Reach out to James if you get stuck
 
 ## Help
-[Meteor Tutorial](https://www.meteor.com/try)
-[Meteor Guide](http://guide.meteor.com)
-[Meteor Docs](https://docs.meteor.com)
+- [Meteor Tutorial](https://www.meteor.com/try)
+- [Meteor Guide](http://guide.meteor.com)
+- [Meteor Docs](https://docs.meteor.com)
