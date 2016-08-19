@@ -36,7 +36,7 @@ Here are the params to the autocomplete call:
 
     var params = {
 	      key: 'AIzaSyDwbZ_q0Pf927tJrhb9aF9cO1EmyBbZrGU',
-	      location: '33.7490,84.3880',
+	      location: '33.7490,-84.3880',
 	      radius: 50000,
 	      rankby: 'distance'
     };
@@ -44,3 +44,8 @@ Here are the params to the autocomplete call:
 ## Big Picture
 - Don't work more than 7 hours
 - Reach out to James if you get stuck
+
+## Help
+[Meteor Tutorial](https://www.meteor.com/try)
+[Meteor Guide](http://guide.meteor.com)
+[Meteor Docs](https://docs.meteor.com)

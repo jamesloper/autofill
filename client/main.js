@@ -4,7 +4,7 @@ import { ReactiveVar } from 'meteor/reactive-var';
 import './main.html';
 
 Template.AutofillDemo.onCreated(function() {	
-	this.search = new ReactiveVar();
+	this.search = new ReactiveVar('464 ethel st nw');
 	this.results = new ReactiveVar();
 	
 	this.autorun(() => {
