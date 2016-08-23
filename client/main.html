@@ -3,16 +3,14 @@
 </head>
 
 <body>
-	<h1>Autofill</h1>
-	
 	{{>AutofillDemo}}
 </body>
 
 <template name="AutofillDemo">
 	<input type="text" placeholder="Street Address" value="{{search}}">
-	<ul>
+	<ul id="list">
 		{{#each results}}
-		<li>{{text}}</li>
+		<li>{{text}}: {{distance}}</li>
 		{{else}}
 		<li>No Results</li>
 		{{/each}}
