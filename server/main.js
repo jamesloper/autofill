@@ -22,7 +22,7 @@ getDetail = function(prediction, callback) {
 // format data to include both address string and coordinates of the location. This will be used later in distance
 // calculation to order results
 formatLocation = function(data) {
-	if (!data.result || !data.result.geometry) return res;
+	if (!data.result || !data.result.geometry) return { };
 
 	return {
 		address: data.result.formatted_address,
