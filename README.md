@@ -14,10 +14,6 @@ While this may sound simple at first, Google Maps's autocomplete feature only ou
 
 ## Requirements
 
-### Client
-- Up to 5 possible results fill in the `ul` element formatted like: `[street number] [street name], [city] [state], [zipcode]`
-- Use the **absolute least** amount of client side code.
-
 ### Server
 - You may use NPM on the server (but we didn't find it useful).
 - Use the HTTP package from [meteor/http](https://docs.meteor.com/api/http.html) to call the API from the server. It has already been added.
@@ -26,6 +22,9 @@ While this may sound simple at first, Google Maps's autocomplete feature only ou
 - Try your best to beat 600 ms execution time as logged on the server.
 - The desired output is a list of street addresses from Google Autocomplete API, but with all results normalized, and with same order as the autocomplete api call.
 
+### Client
+- Up to 5 possible results fill in the `ul` element. The content of the `li` should be the `street` field of each result.
+- Use the **absolute least** amount of client side code.
 
 Here are the params to the autocomplete call:
 
