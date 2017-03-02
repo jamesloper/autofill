@@ -14,10 +14,12 @@ The desired output is a list of street addresses in the **same order** they come
 	'city': 'Atlanta',
 	'state': 'GA',
 	'zipcode': '30318',
-	'latlng': '33.7490,-84.3880',
+	'latlng': {
+		'lat': '33.7490',
+		'lng': '-84.3880'
+	}
 };
 ```
-These requirements are super strict but they are not as strict at Real Hux HQ.
 
 ## This Repo
 
@@ -55,6 +57,8 @@ var params = {
       rankby: 'distance'
 };
 ```
+
+These requirements are super strict but they are not as strict at Real Hux HQ.
 
 ## Help
 - Don't work more than 6 hours
