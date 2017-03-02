@@ -10,7 +10,6 @@ While this may sound simple at first, Google Maps's autocomplete feature only ou
 - This repo contains some basic building blocks.
 - There is already an `input` and `ul` element in the client template.
 - The `server/main.js` file is a stub. It has a function that logs the execution time.
-- Pretty styling is not required.
 
 ## Requirements
 
@@ -23,6 +22,7 @@ While this may sound simple at first, Google Maps's autocomplete feature only ou
 - The desired output is a list of street addresses from Google Autocomplete API, but with all results normalized, and with same order as the autocomplete api call.
 
 ### Client
+- Pretty styling is not required.
 - Up to 5 possible results fill in the `ul` element. The content of the `li` should be the `street` field of each result.
 - Use the **absolute least** amount of client side code.
 
