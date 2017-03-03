@@ -1,7 +1,7 @@
 ## Project Overview
 We'd like to assess your programming ability. We have created this project as a means to see how well you can adapt to our full-stack javascript framework, Meteor. The task is simple — create a basic web app written in Meteor. The web app will have just one feature: an address autofill, backed by a list of objects of a certain address schema.
 
-While this may sound simple at first, Google Maps's autocomplete feature only outputs an address string and a place_id, but we need more data. You must therefor call another API to add the missing data. This is the opposite of a clean implementation, but we challenge you to handle this use case with grace, as Google provides the only reliable Street Address API.
+While this may sound simple at first, Google Maps Autocomplete API results are merely address `strings` and `place_id`s, but we need more data. You must therefor call another API to add the missing data. This is the opposite of a clean implementation, but we challenge you to handle this use case with grace, as Google provides the only reliable Street Address API.
 
 <img src="https://i.imgur.com/Tfi0xR5.jpg" width="600">
 
