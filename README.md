@@ -14,17 +14,16 @@ While this may sound simple at first, Google Maps Autocomplete API results are m
 ## Requirements
 
 ### Server
+- The desired output is a list of street addresses from Google Autocomplete API, but with all results normalized, and with same order as the autocomplete api call.
 - You may use NPM on the server (but we didn't find it useful).
 - Use the HTTP package from [meteor/http](https://docs.meteor.com/api/http.html) to call the API from the server. It has already been added.
-- Accuracy of results is one of the most important aspects.
 - For this test your results should prefer addresses near Atlanta, GA (3.7490° N, 84.3880° W).
-- Try your best to beat 600 ms execution time as logged on the server.
-- The desired output is a list of street addresses from Google Autocomplete API, but with all results normalized, and with same order as the autocomplete api call.
+- Beat 600 ms execution time logged on the server.
 
 ### Client
-- Pretty styling is not required.
-- Up to 5 possible results fill in the `ul` element. The content of the `li` should be the `street` field of each result.
 - Use the **absolute least** amount of client side code.
+- Pretty styling is not required.
+- The content of the `li` should be the `street` field of each result.
 
 Here are the params to the autocomplete call:
 
@@ -37,7 +36,7 @@ var params = {
 };
 ```
 
-Here is the *exact* schema for each item in the results set.
+Here is a good schema for each item in the results set.
 
 ``` javascript
 {
