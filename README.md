@@ -14,7 +14,7 @@ While this may sound simple at first, Google Maps Autocomplete API results are m
 ## Requirements
 
 ### Server
-- The desired output is a list of street addresses from Google Autocomplete API, but with all results normalized, and with same order as the autocomplete api call.
+- The desired output is a list of street addresses from Google Autocomplete API, but with all results normalized, and with same order as the Autocomplete API call.
 - You may use NPM on the server (but we didn't find it useful).
 - Use the HTTP package from [meteor/http](https://docs.meteor.com/api/http.html) to call the API from the server. It has already been added.
 - For this test your results should prefer addresses near Atlanta, GA (3.7490° N, 84.3880° W).
