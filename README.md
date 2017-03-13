@@ -52,7 +52,9 @@ Here is a good schema for each item in the results set.
 
 ## Help
 - Don't work more than 6 hours
-- Reach out to James if you get stuck
+- Reach out to James if you get stuck at james@hux.com
+
+## Want to use the Meteor platform?
 - [Meteor Tutorial](https://www.meteor.com/try)
 - [Meteor Guide](http://guide.meteor.com)
 - [Meteor Docs](https://docs.meteor.com)
