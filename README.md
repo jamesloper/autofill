@@ -1,5 +1,5 @@
 ## Project Overview
-We have created this project as a means to see how well you can implement your version of the Hux address autofill form. The task is simple — create a basic web app with a text box and results list backed by a list of objects of a **certain address schema**. It is definitely expected that it should work as well as the one at hux.com checkout.
+We have created this project as a means to see how well you can implement your version of the Hux address autofill form. The task is simple — create a basic web app with a **text box** for address entry and a results **ul** backed by objects of a **consistent, normalized schema**. It is definitely expected that it should work as well as the one at hux.com checkout.
 
 While this may sound simple at first, Google Maps Autocomplete API results are merely address `strings` and `place_id`s, but we need more data. You must therefore call another API to add the missing data. This is the opposite of an ideal implementation, but we challenge you to handle this use case with grace, as Google provides the only reliable Street Address API.
 
