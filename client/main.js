@@ -3,17 +3,20 @@ import { ReactiveVar } from 'meteor/reactive-var';
 
 import './main.html';
 
-Template.AutofillDemo.onCreated(function() {	
+Template.AutofillDemo.onCreated(function() {
 	this.search = new ReactiveVar('464 ethel st nw');
 	this.results = new ReactiveVar();
-	
+	var results = this.results;
+
 	this.autorun(() => {
 		var search = this.search.get();
+
 		Meteor.call('Autofill', search, function(err, res) {
 			if (err) {
 				console.log('ERROR:', err);
 			} else {
 				console.log('RESULT:', res);
+				results.set(res);
 			}
 		});
 	});
