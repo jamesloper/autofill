@@ -7,7 +7,7 @@ While this may sound simple at first, Google Maps Autocomplete API results are m
 
 ## This Repo
 
-- This repo contains some basic building blocks useful if you are using Meteor, but you don't have to clone this repo. You can start with any language.
+- This repo contains some basic building blocks in Meteor.
 - There is already an `input` and `ul` element in the client template.
 - The `server/main.js` file is a stub. It has a function that logs the execution time.
 
@@ -54,7 +54,7 @@ Here is a good schema for each item in the results set.
 - Don't work more than 6 hours
 - Reach out to James if you get stuck at james@hux.com
 
-## Want to use the Meteor platform?
+## Help with Meteor platform
 - [Meteor Tutorial](https://www.meteor.com/try)
 - [Meteor Guide](http://guide.meteor.com)
 - [Meteor Docs](https://docs.meteor.com)
