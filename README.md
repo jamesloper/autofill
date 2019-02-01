@@ -12,6 +12,8 @@ While this may sound simple at first, Google Maps Autocomplete API results only 
 - The `server/methods.js` file is a stub. It has a function that logs the execution time.
 
 ## Start Application
+
+Install meteor: `curl https://install.meteor.com/ | sh` or https://www.meteor.com/install
 ``` bash
 meteor npm install
 meteor
