@@ -3,7 +3,7 @@ import { HTTP } from 'meteor/http'; // See: https://docs.meteor.com/api/http.htm
 
 Meteor.methods({
 	'Autofill': function(search) {
-		var BEGIN = Date.now();
+		const BEGIN = Date.now();
 		
 		// api calls, etc
 		// api calls, etc
