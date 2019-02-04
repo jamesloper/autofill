@@ -1,19 +1,26 @@
 ## Project Overview
-We have created this project as a means to see how well you can implement your version of a PREVIOUS version of the Hux address autofill form. The task is simple — create a basic web app with a **text box** for address entry and a results **ul** backed by transformed objects of a **consistent, normalized schema**. It is definitely expected that it should work as well as the one at hux.com.
+We have created this project to see how well you can reimplement Hux's address autofill form. 
 
-While this may sound simple at first, Google Maps Autocomplete API results only include address `strings` and `place_id`s, but we need more data. You must therefore call another API to add the missing data. This is the opposite of an ideal implementation, but we challenge you to handle this use case with grace.
+The task is simple — create a basic web app with a **text box** for address entry and a results **ul** backed by transformed objects of a **consistent, normalized schema**. It is definitely expected that it should work as well as the one at hux.com.
+
+While this may sound simple, Google's Autocomplete API only includes address and place_id, but we need more details in the object.
 
 <img src="https://i.imgur.com/Tfi0xR5.jpg" width="600">
 
 ## This Repo
 
-- This repo contains some basic building blocks useful if you are using Meteor, but you don't have to clone this repo. You can start with any language.
-- There is already an `input` and `ul` element in the client template.
+- This repo contains some basic building blocks useful if you want to do it in Meteor, but you are free to build it in plain old Node.
+- There is already an `<AddressInput/>` component started.
 - The `server/methods.js` file is a stub. It has a function that logs the execution time.
 
 ## Start Application
 
-Install meteor: `curl https://install.meteor.com/ | sh` or https://www.meteor.com/install
+To run this starter application, just follow these steps.
+
+Install Meteor `curl https://install.meteor.com/ | sh`
+
+npm install and run the project
+
 ``` bash
 meteor npm install
 meteor
@@ -35,7 +42,7 @@ Here are the params to the autocomplete call:
 
 ``` javascript
 const params = {
-      key: 'AIzaSyDwbZ_q0Pf927tJrhb9aF9cO1EmyBbZrGU',
+      key: 'blahhh',
       location: '33.7490,-84.3880',
       radius: 50000,
       rankby: 'distance'
