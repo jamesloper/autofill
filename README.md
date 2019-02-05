@@ -1,9 +1,22 @@
 ## Project Overview
-We have created this project to see how well you can reimplement Hux's address autofill form. 
+We have created this project to see how well you can reimplement Hux's old address autofill form.
 
-The task is simple — create a basic web app with a **text box** for address entry and a results **ul** backed by transformed objects of a **consistent, normalized schema**. It is definitely expected that it should work as well as the one at hux.com.
+We switched to a different approach since the 2018 pricing model update, but this old approach was novel and fun to program (for me).
 
-While this may sound simple, Google's Autocomplete API only includes address and place_id, but we need more details in the object.
+The task is simple — create a good react component with a **text box** for address entry and a results **ul** backed by transformed objects of a set schema.
+
+While this may sound simple, Google's Autocomplete API only includes `address` and `place_id`, but you need to append data to each autocomplete suggestion so that each item in the results array come back like this:
+
+``` javascript
+{
+	'place': 'placeIdBlaBlaBla',
+	'street': '464 Ethel St NW, Atlanta, GA 30318',
+	'city': 'Atlanta',
+	'state': 'GA',
+	'zipcode': '30318',
+	'location': {'type': 'Point', 'coordinates': [-84.3880, 33.7490]}
+}
+```
 
 <img src="https://i.imgur.com/Tfi0xR5.jpg" width="600">
 
@@ -35,8 +48,8 @@ meteor
 
 #### Client
 - Use the **absolute least** amount of client side code.
-- Pretty styling is not required as this is more of a backend test.
-- The text content of the `li` should be the `street` field of each result.
+- CSS is not needed, since I am the resident CSS expert, but you can add it if you feel inclined.
+- The content of the `li` should be the `street` field of each result.
 
 Here are the params to the autocomplete call:
 
@@ -47,19 +60,6 @@ const params = {
       radius: 50000,
       rankby: 'distance'
 };
-```
-
-Here is the required schema for each item in the results set.
-
-``` javascript
-{
-	'place': 'bla-bla-bla',
-	'street': '464 Ethel St NW, Atlanta, GA 30318',
-	'city': 'Atlanta',
-	'state': 'GA',
-	'zipcode': '30318',
-	'location': {'type': 'Point', 'coordinates': [-84.3880, 33.7490]}
-}
 ```
 
 ## Help
